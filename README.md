@@ -10,7 +10,7 @@ You can see some example output in [this other repository](https://github.com/kj
 
 ## Running the script
 
-`./gradle generate`
+`./gradlew generate`
 
 ## Changing the behaviour of the script
 
