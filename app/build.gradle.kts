@@ -24,6 +24,6 @@ tasks.register("generate", Wsdl2Java::class) {
         wsdl.set(file("drs.wsdl"))
         outputDir.set(file("$buildDir/generated-java"))
         markGenerated.set(true)
-        extraArgs.set(listOf("-impl", "-server"))
+        extraArgs.set(listOf("-server"))
     }
 }
