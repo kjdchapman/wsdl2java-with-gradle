@@ -22,8 +22,9 @@ cxfCodegen {
 tasks.register("generate", Wsdl2Java::class) {
     toolOptions {
         wsdl.set(file("drs-single-operation.wsdl"))
-        outputDir.set(file("$buildDir/generated-java"))
+        outputDir.set(file("$buildDir"))
         markGenerated.set(true)
+	packageNames.set(listOf("generated"))
         extraArgs.set(listOf("-server"))
     }
 }
